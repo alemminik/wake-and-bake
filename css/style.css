@@ -1,0 +1,15 @@
+@import "./fonts.css";
+@import "./reset.css";
+@import "./global.css";
+
+@import "./header.css";
+
+@import "./main/about.css";
+@import "./main/program.css";
+@import "./main/gallery.css";
+@import "./main/testimonials.css";
+@import "./main/swiper-bundle.min.css";
+@import "./main/contact.css";
+
+@import "./footer.css";
+@import "./media.css";
