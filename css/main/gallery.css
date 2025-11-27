@@ -1,0 +1,112 @@
+.gallery__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.gallery__img {
+    justify-self: center;
+    align-self: center;
+}
+
+.gallery__img img {
+    max-width: 100%;
+}
+
+.gallery__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px 15px;
+}
+
+.gallery__info {
+    max-width: 380px;
+}
+
+.gallery__title {
+    margin-bottom: 20px;
+}
+
+.gallery__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
+    color: #312C27;
+    text-align: center;
+    font-family: Gabriola;
+    font-size: 42px;
+    line-height: 0.9;
+    width: 170px;
+}
+
+.gallery__prev, .gallery__next {
+    background: transparent;
+    cursor: pointer;
+    border: 1.5px solid var(--accent-color);
+    border-radius: 50%;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.gallery__prev.swiper-button-disabled,
+.gallery__next.swiper-button-disabled {
+    border: 1.5px solid #E1D9E1;
+    cursor: auto;
+}
+
+.gallery__prev.swiper-button-disabled path,
+.gallery__next.swiper-button-disabled path {
+    fill: #E1D9E1;
+}
+
+@media (hover: hover) {
+    .gallery__prev.swiper-button-disabled:hover,
+    .gallery__next.swiper-button-disabled:hover {
+        background: transparent;
+    }
+}
+
+@media (hover: hover) {
+    .gallery__prev.swiper-button-disabled:hover path,
+    .gallery__next.swiper-button-disabled:hover path {
+        fill: #E1D9E1;
+    }
+}
+
+@media (hover: hover) {
+    .gallery__prev:hover, .gallery__next:hover {
+        background: var(--accent-color);
+    }
+}
+
+.gallery__prev path, .gallery__next path {
+    transition: var(--transition);
+}
+
+@media (hover: hover) {
+    .gallery__prev:hover path, .gallery__next:hover path {
+        fill: var(--general-bg);
+    }
+}
+
+.gallery__pagination {
+    display: flex;
+    max-width: 40px;
+}
+
+.gallery__slide {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.gallery__slide img {
+    width: 100%
+}
